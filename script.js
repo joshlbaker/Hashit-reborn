@@ -28,6 +28,7 @@ $(function(){
         console.log(data)
         var searchF = [];
         searchF.push("Showing results for " + '<strong><i>' + searchField + '</i></strong>' + "<br>" + "<br>");
+
         $( "<p/>", {
           "class": "searchF",
           html: searchF.join( "" )
