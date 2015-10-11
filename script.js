@@ -36,7 +36,7 @@ $(function(){
 
   			_.each(data.data, function(obj){
           var photo = [];
-  				var image = (obj.images.thumbnail.url);
+  				var image = (obj.images.low_resolution.url);
   				var text = (obj.caption.text);
           var likes = (obj.likes.count);
 
@@ -45,11 +45,17 @@ $(function(){
           // var likes =
           photo.push("<span class='glyphicon glyphicon-heart'>" + " " + likes + '<br>' + '<br>' + "</span>");
     	  	photo.push('<img src=' + image + '>' + '<br>');
+          if (text.length < 100){
+          photo.push("<br>" + "<legend style='width:200px;'>" + text + "</legend>");
+        }else{
+          photo.push("<br>" + "<legend style='width:200px;'>" + "#" + searchField + "</legend>");
+        }
           // photo.push(text)
     		  $( "<p/>", {
     		    "class": "grid-item",
     		    html: photo.join( "" )
     		  }).appendTo( "#results" );
+
 
           // if
 
@@ -72,8 +78,10 @@ $(function(){
         var popularPhoto = [];
         var popularImage = (obj.images.low_resolution.url);
         var likes = (obj.likes.count);
+        var text = (obj.caption.text);
         popularPhoto.push("<span class='glyphicon glyphicon-heart'>" + " " + likes + '<br>' + '<br>' + "</span>");
         popularPhoto.push('<img src=' + popularImage + '>');
+        popularPhoto.push("<br>" + "<legend>" + text + "</legend>");
         $( "<p/>", {
           "class": "grid-item",
           html: popularPhoto.join( "" )

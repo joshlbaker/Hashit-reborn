@@ -3,11 +3,8 @@
   padding: 20px;
   margin-left: 10px;
 }
-/*#topPost,{
-  margin-top: 200px;
-}*/
 .jumbotron{
-  background-image: url("https://images.unsplash.com/photo-1440847899694-90043f91c7f9?q=80&fm=jpg&s=3ec8ed6d2f740ebdd359ac8c79483dbf");
+  background-image: url("http://37.media.tumblr.com/f6c67ec2821a91051e4175f8a102e1e2/tumblr_n6rzpcsMk41st5lhmo1_1280.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color:white;
@@ -15,25 +12,28 @@
   /*margin-top: 50px;*/
   z-index: -1;
 }
-#darkFilter > h2{
-  margin-top: 40px;
+#darkFilter  > h2{
+  /*margin-top: 80px;*/
   font-size: 100px;
   text-align: center;
-  border-bottom: solid 2px white;
-  border-left: solid 2px white;
-
+  border-bottom: solid 3px white;*/
+  margin:auto;
+  margin-left: auto;
+  margin-right: auto;
   width:300px;
   /*float: left;*/
 
 }
-#darkFilter > h3{
-  font-size: 90px;
+#darkFilter  > h3{
+  font-size: 60px;
   text-align: center;
-  border-top: solid 2px white;
-  border-left: solid 2px white;
+  margin: auto;
+  border: solid 3px white;
+  margin:auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
 
-  width:1050px;
-  float: right;
 }
 
 #darkFilter{
@@ -45,10 +45,10 @@
 }
 
 #topPost{
-  margin-top: -50px;
+  margin-top: 50px;
 }
 #results{
-  /*margin-top: 100px;*/
+  margin-top: 63px;;
   position: relative;
   width: 60vw;
   display: block;
@@ -64,7 +64,13 @@
 .well{
   margin-right: 0px;
   background-color: rgba(0, 0, 0, 0);
-  border: none;
+  border-right: solid 2px grey;
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+}
+#hashes{
+  max-width:100px;
 }
 /*#searchF{
   text-align: center;
