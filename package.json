@@ -1,0 +1,21 @@
+{
+  "name": "hashit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshlbaker/Hashit-reborn.git"
+  },
+  "author": "Josh Baker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshlbaker/Hashit-reborn/issues"
+  },
+  "homepage": "https://github.com/joshlbaker/Hashit-reborn#readme"
+}
